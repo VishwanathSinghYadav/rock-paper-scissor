@@ -5,7 +5,7 @@ let resultEl = document.getElementById("result-id")
 let userChoice = ""
 let computerChoice = ""
 
-let elements = ["rock", "paper", "scissor"];
+let elements = ["rock✊", "paper🖐", "scissor✌"];
 
 const start = (event) => {
     userChoice = event.target.innerHTML;
@@ -18,22 +18,22 @@ const start = (event) => {
 function result() {
     if (userChoice === computerChoice) {
         resultEl.innerHTML = "Result : It's a tie"
-    } else if (userChoice === "rock") {
-        if (computerChoice === "paper") {
+    } else if (userChoice === "rock✊") {
+        if (computerChoice === "paper🖐") {
             resultEl.innerHTML = "Result : Computer WINS"
         } else {
             resultEl.innerHTML = "Result : You WON!!!"
         }
 
-    } else if (userChoice === "paper") {
-        if (computerChoice === "scissor") {
+    } else if (userChoice === "paper🖐") {
+        if (computerChoice === "scissor✌") {
             resultEl.innerHTML = "Result : Computer WINS"
         } else {
             resultEl.innerHTML = "Result : You WON!!!"
         }
 
-    } else if (userChoice === "scissor") {
-        if (computerChoice === "rock") {
+    } else if (userChoice === "scissor✌") {
+        if (computerChoice === "rock✊") {
             resultEl.innerHTML = "Result : Computer WINS"
         } else {
             resultEl.innerHTML = "Result : You WON!!!"
